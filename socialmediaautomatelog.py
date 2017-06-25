@@ -9,9 +9,9 @@ def loginFB():
     browserType.get("https://facebook.com")
     login=browserType.find_element_by_id("email")
     password=browserType.find_element_by_id("pass")
-    login.send_keys("username") 
+    login.send_keys("username")  #enter username
     print("Username entered...")
-    password.send_keys("password")
+    password.send_keys("password") #enter password
     print("Password entered...")
     browserType.find_element_by_id("u_0_r").click()
     print("Facebook successfully logged in...")
