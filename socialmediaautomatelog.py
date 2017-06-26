@@ -15,16 +15,6 @@ def loginFB():
     print("Password entered...")
     browserType.find_element_by_id("u_0_r").click()
     print("Facebook successfully logged in...")
-    pyautogui.moveTo(300,500,duration=1)
-    pyautogui.click(300,500)
-    browserType.find_element_by_xpath("//div[textarea/@name='xhpc_message']").click()
-    post = browserType.find_element_by_xpath("//*[@id='composer_text_input_box']/div/div/div[2]/div/div/div/div]")
-    post.send_keys("wasak")
-    browserType.find_element_by_xpath("//div[textarea/@name='xhpc_message']").click()
-    post = browserType.find_element_by_xpath("//*[@id='composer_text_input_box']/div/div/div[2]/div/div/div/div]")
-    post.send_keys("wasak")
-    browserType.find_element_by_xpath("//div[button/@data-testid='react-composer-post-button']").click()
-    
     
 
 def loginTwitter():
@@ -84,7 +74,5 @@ def main():
     elif choice is "0":
         browserType=webdriver.Chrome("C:\Users\Brvno\Downloads\chromedriver.exe")
         browserType.quit()
-
-                                    
 
 main()
