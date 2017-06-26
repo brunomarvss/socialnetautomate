@@ -1,5 +1,4 @@
 from selenium import webdriver
-import time
 import pyautogui
 
 
@@ -68,7 +67,6 @@ def main():
 
     elif choice is "3":
             loginIG()
-
     elif choice is "4":
             loginSteam()
     elif choice is "0":
